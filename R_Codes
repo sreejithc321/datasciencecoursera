@@ -1,12 +1,13 @@
-# Dataset : hw1_data.csv
+    
+    # Dataset : hw1_data.csv
 
 
     Q : In the dataset provided for this Quiz, what are the column names of the dataset?
 
-     col_name = read.csv('hw1_data.csv')
-     names(col_name)
+        col_name = read.csv('hw1_data.csv')
+        names(col_name)
 
-    Answer :  "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"   "Day"
+        Answer :  "Ozone"   "Solar.R" "Wind"    "Temp"    "Month"   "Day"
 
 
 
