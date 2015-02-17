@@ -29,7 +29,8 @@
         
         Answer : 153
 
-Q : Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
+
+    Q : Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
 
         data = read.csv('hw1_data.csv')
         tail(data,2)
