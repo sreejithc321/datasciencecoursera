@@ -42,3 +42,10 @@
         153    20     223 11.5   68     9  30
 
 
+    Q : How many missing values are in the Ozone column of this data frame?
+
+        data = read.csv('hw1_data.csv')
+        sub = subset(data, is.na(Ozone))
+        nrow(sub)
+        
+        Answer : 37
