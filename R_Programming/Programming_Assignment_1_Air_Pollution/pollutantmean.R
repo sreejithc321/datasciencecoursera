@@ -17,8 +17,8 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   values <- numeric()
   
   ## Read 'pollutant 'values from 'id' file
-  for (i in id) {
-    data <- read.csv(files[i], header=TRUE)
+  for (file in id) {
+    data <- read.csv(files[file], header=TRUE)
     values <- c(values, data[[pollutant]])
   }
   

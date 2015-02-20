@@ -14,19 +14,19 @@ complete <- function(directory, id = 1:332) {
   ## number of complete cases
   
   files <- list.files(directory, pattern=".csv", full.names=TRUE)
-  idRow <- numeric()
-  nobsRow <- numeric()
+  row_id <- numeric()
+  rnobs <- numeric()
   
   #Read data
   for (i in id) 
     {
       data <- read.csv(files[i], header=TRUE)
-      idRow <- c(idRow, i)
+      row_id <- c(row_id, i)
     
       # sum complete cases
-      nobsRow <- c(nobsRow, sum(complete.cases(data)))
+      rnobs <- c(rnobs, sum(complete.cases(data)))
     }
     
-    df <- data.frame(id = idRow, nobs = nobsRow)
+    df <- data.frame(id = row_id, nobs = rnobs)
     print(df)
   }
